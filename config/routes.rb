@@ -8,4 +8,8 @@ Rails.application.routes.draw do
 
   resources :products
 
+  resources :credit_cards
+
+  resources :transactions, only: [:index, :show, :create]
+
 end
